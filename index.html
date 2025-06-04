@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <style>
     body {
-      margin: 20;
+      margin: 10px;
       padding: 0;
       font-family: 'Inter', sans-serif;
       text-align: center;
@@ -198,6 +198,24 @@
     flex-wrap: wrap;
     margin-top: 20px; /* reduce to your needs */
   }
+  .shorts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  @media (max-width: 700px) {
+    .shorts-grid {
+      grid-template-columns: 1fr;
+      justify-content: center;
+    }
+
+    .shorts-grid iframe {
+      margin: 0 auto;
+    }
+  }
 
   </style>
 </head>
@@ -232,20 +250,16 @@
         Your browser does not support the video tag.
       </video>
       -->
-      <div style="display: grid; grid-template-columns: repeat(2,300px);justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 40px;">
-        <iframe width="300" height="533"
-          src="https://www.youtube.com/embed/b68lPHyv5Ok"
-          title="First Video"
-          frameborder="0"
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen>
-        </iframe>
-      
-        <iframe width="300" height="533" src="https://www.youtube.com/embed/xseO1Unbmxk" title="SA   129" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="300" height="533" src="https://www.youtube.com/embed/AC2haG-fl_8" title="SMN4   Statementclo V1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="300" height="533" src="https://www.youtube.com/embed/Xvvr6a4jEbc" title="Dartee   128" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
+        <div class="shorts-grid">
+          <iframe width="300" height="533" src="https://www.youtube.com/embed/b68lPHyv5Ok" title="DG 1091" frameborder="0" allowfullscreen></iframe>
+
+          <iframe width="300" height="533" src="https://www.youtube.com/embed/xseO1Unbmxk" title="SA 129" frameborder="0" allowfullscreen></iframe>
+
+          <iframe width="300" height="533" src="https://www.youtube.com/embed/AC2haG-fl_8" title="SMN4" frameborder="0" allowfullscreen></iframe>
+
+          <iframe width="300" height="533" src="https://www.youtube.com/embed/Xvvr6a4jEbc" title="Dartee 128" frameborder="0" allowfullscreen></iframe>
+        </div>
+
       
       
       
