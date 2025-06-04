@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <style>
     body {
-      margin: 0;
+      margin: 20;
       padding: 0;
       font-family: 'Inter', sans-serif;
       text-align: center;
@@ -21,7 +21,7 @@
       max-width: 1200px;
       margin: auto;
       padding: 60px 20px;
-      background: rgba(255, 255, 255, 0.8);
+      background: rgba(255, 255, 255, 0.85);
       border-radius: 16px;
     }
 
@@ -29,6 +29,7 @@
       font-size: 3.5rem;
       font-weight: 800;
       margin-bottom: 20px;
+      margin-top: -30px;
     }
 
     h2 {
@@ -42,7 +43,7 @@
     }
 
     .section {
-      margin-bottom: 80px;
+      margin-bottom: 20px;
     }
 
     .profile-pic {
@@ -52,6 +53,7 @@
       border-radius: 50%;
       display: block;
       margin: 30px auto;
+      margin-top: -20px;
     }
 
     .portfolio-grid {
@@ -119,6 +121,7 @@
       margin-top: 40px;
       padding: 20px 0;
       font-size: 0.9rem;
+      margin-bottom: -80px;
     }
 
     .social-icons {
@@ -202,11 +205,13 @@
 
   <div class="container">
 
-    <div class="section" data-aos="fade-up">
+    <div class="section" data-aos="fade-up";>
       <h1>Creative Strategist</h1>
       <img src="Website Design/raphael.jpg" alt="Raphael Schwarz" class="profile-pic" data-aos="zoom-in">
       <h2>Raphael Schwarz</h2>
-      <p>Benefit from my expertise crafting ads for multiple Ecommerce brands, each making six to seven figures every month.</p>
+      <div style="max-width: 800px; margin: 0 auto;">
+        <p>Benefit from my expertise crafting ads for multiple Ecommerce brands, each making six to seven figures every month.</p>
+      </div>
     </div>
 
     <div class="section" data-aos="fade-up">
@@ -227,7 +232,7 @@
         Your browser does not support the video tag.
       </video>
       -->
-      <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 40px;">
+      <div style="display: grid; grid-template-columns: repeat(2,300px);justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 40px;">
         <iframe width="300" height="533"
           src="https://www.youtube.com/embed/b68lPHyv5Ok"
           title="First Video"
@@ -238,6 +243,8 @@
         </iframe>
       
         <iframe width="300" height="533" src="https://www.youtube.com/embed/xseO1Unbmxk" title="SA   129" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="300" height="533" src="https://www.youtube.com/embed/AC2haG-fl_8" title="SMN4   Statementclo V1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="300" height="533" src="https://www.youtube.com/embed/Xvvr6a4jEbc" title="Dartee   128" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
       
       
@@ -267,13 +274,15 @@
     <div class="section" data-aos="fade-up">
       <h2>Interested?</h2>
       <p>Schedule Your Free Call</p>
-      <p>Let's go over your business case together, to see if I can help you scale to the next level.</p>
+      <div style="max-width: 500px; margin: 0 auto;">
+        <p>Let's go over your business case together, to see if I can help you scale to the next level.</p>
+      </div>
       <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1S_46iqZZesvKdg4iZakxih2GYpHYE4DF48ZO6MK32dwwkHSqLdLDU7D5H23WrmnWUE4tXJq_p" class="button" data-aos="zoom-in" target="blank" rel="noopener noreferrer">Book your free call</a>
       <a href="mailto:me@raphaelschwarz.com" class="button" data-aos="zoom-in">Email Me</a>
     </div>
 
     <div class="social-icons">
-      <a href="mailto:me@raphaelschwarz.com" class="social-button" target="blank" rel="noopener noreferrer">
+      <a href="mailto:your-email@example.com" class="social-button" target="blank" rel="noopener noreferrer">
         <img src="Website Design/email.png" alt="Instagram" />
       </a>
       <a href="https://www.linkedin.com/in/raphael-schwarz23/" class="social-button" target="blank" rel="noopener noreferrer">
