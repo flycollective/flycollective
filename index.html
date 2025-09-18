@@ -306,8 +306,50 @@
     }
 
 
+    .testimonial-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: stretch; /* sorgt für gleiche Höhe */
+    }
+
+    .testimonial {
+      background: white;
+      padding: 20px 18px;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      width: 320px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* Abstand oben ↔ unten */
+      max-height: 120px;
+    }
+
+    .testimonial .quote {
+      font-style: italic;
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+
+    .testimonial .author {
+      font-weight: bold;
+      font-size: 1rem;
+      text-align: right;
+    }
 
 
+    @media (max-width: 768px) {
+      .testimonial {
+        max-width: 90%;
+      }
+    }
+
+    .testimonial-section{
+      margin-top: 40px;
+      margin-bottom: 120px;
+    }
   </style>
 </head>
 <body>
@@ -358,7 +400,25 @@
         <p>28. Vienna-based. €2.3M+ in tracked revenue for 7-figure brands. I find the creative angles your competitors miss and turn them into campaigns that scale. I probably spend more time researching your customers than your competitors spend creating ads. That's why my campaigns hit.</p>
       </div>
     </div>
-    <div class="section" data-aos="fade-up">
+    <div class="testimonial-section" data-aos="fade-up">
+        <h2>See what others say</h2>
+        <div class="testimonial-grid">
+          <div class="testimonial" data-aos="fade-up">
+            <p class="quote">“Great work on the other content. It’s really good!”</p>
+            <p class="author">– Tom</p>
+          </div>
+          <div class="testimonial" data-aos="fade-up">
+            <p class="quote">“Looking super clean, I noted a huge improvement since start.”</p>
+            <p class="author">– Carlos</p>
+          </div>
+          <div class="testimonial" data-aos="fade-up">
+            <p class="quote">“Just read them, they are all very good. Thanks!”</p>
+            <p class="author">– Ava</p>
+          </div>
+        </div>
+      </div>
+
+    <div class="testimonial-section" data-aos="fade-up">
       <div class="logo-grid">
         <img src="logos/brand1.png" alt="Brand 1">
         <img src="logos/brand2.png" alt="Brand 2">
