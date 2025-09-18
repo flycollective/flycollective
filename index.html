@@ -324,6 +324,12 @@
       flex-direction: column;
       justify-content: space-between; /* Abstand oben ↔ unten */
       max-height: 120px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .testimonial:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
     }
 
     .testimonial .quote {
@@ -348,7 +354,7 @@
 
     .testimonial-section{
       margin-top: 40px;
-      margin-bottom: 120px;
+      margin-bottom: 100px;
     }
   </style>
 </head>
@@ -418,7 +424,7 @@
         </div>
       </div>
 
-    <div class="testimonial-section" data-aos="fade-up">
+    <div class="section" data-aos="fade-up">
       <div class="logo-grid">
         <img src="logos/brand1.png" alt="Brand 1">
         <img src="logos/brand2.png" alt="Brand 2">
